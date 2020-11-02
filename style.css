@@ -53,6 +53,7 @@ body {
     background-color: #494747;
 }
 
+/*Jumbotron is part of the Bootstrap declaration. This will set the image of the front page to a laptop, while the following Jumbrotrons will set specific images to each season section */
 .jumbotron {
     background-image: url('../images/laptop.jpg');
     background-size: cover;
@@ -161,7 +162,7 @@ p.intro {
 @media screen and (max-width: 576px) {
 
     fieldset {
-        width: 95vw;
+        width: 95vw; /* vw = viewport width */
         margin-top: 1em;
     }
 
@@ -177,7 +178,7 @@ p.intro {
 
     .jumbotron {
         padding: 0.1em;
-        width: 100vw;
+        width: 100vw; 
     }
 
     h1.display-3 {
