@@ -1,0 +1,219 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+    position: relative;
+    max-height: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 3.5rem;
+    margin-bottom: 100px;
+    /* Margin bottom by footer height */
+    font-family: "Ubuntu", sans-serif;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    /* Set the fixed height of the footer here */
+    background-color: #494747;
+    color: #EEEEEE;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container.ftr {
+    margin-top: 0em;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-family: "Ubuntu Condensed", sans-serif;
+}
+
+.navbar-nav {
+    padding-left: 5em;
+}
+
+.nav-item {
+    margin-left: 2em;
+}
+
+.orange {
+    color: #F17704;
+}
+
+.bg-dark {
+    background-color: #494747;
+}
+
+.jumbotron {
+    background-image: url('../images/laptop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*min-height: 800px;*/
+}
+
+.jumbotron-spring {
+    background-image: url('../images/kingsgarden.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*min-height: 800px;*/
+}
+
+.jumbotron-summer {
+    background-image: url('../images/summer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*min-height: 800px;*/
+}
+
+.jumbotron-autumn {
+    background-image: url('../images/fall.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*min-height: 800px;*/
+}
+
+.jumbotron-winter {
+    background-image: url('../images/winter.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*min-height: 800px;*/
+}
+
+.container.jumbo {
+    background-color: rgba(200, 200, 200, 0.5);
+    padding: 2em;
+}
+
+
+fieldset {
+    margin-top: 5em;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p.error {
+    font-size: 1.2em;
+    font-family: "Quicksand", sans-serif;
+    color: indianred;
+    text-align: center;
+    margin-top: 2em;
+}
+
+p.welcome {
+    font-size: 1.2em;
+    font-family: "Quicksand", sans-serif;
+    color: darkorange;
+    text-align: center;
+}
+
+div.container,
+.container.message {
+    margin-top: 2em;
+}
+
+p.intro {
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 3em;
+    text-align: center;
+    color: #F17704;
+}
+
+.intro.spring {
+    color: #F69256;
+}
+
+.intro.summer {
+    color: #FAC22B;
+    ;
+}
+
+.intro.winter {
+    color: steelblue;
+}
+
+.t15 {
+    margin-top: 30vh;
+}
+
+.hideme {
+    display: none;
+}
+
+.container {
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 576px) {
+
+    fieldset {
+        width: 95vw;
+        margin-top: 1em;
+    }
+
+    main {
+        width: 100vw;
+    }
+
+    .container.jumbo {
+        background-color: rgba(200, 200, 200, 0.7);
+        padding: 0.1em;
+        width: 100vw;
+    }
+
+    .jumbotron {
+        padding: 0.1em;
+        width: 100vw;
+    }
+
+    h1.display-3 {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .container.jumbo > p {
+        padding: 1em;
+    }
+
+    .footer {
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background-color: #494747;
+        color: #EEEEEE;
+        text-align: center;
+        overflow: hidden;
+        font-size: 0.8em;
+    }
+
+    .container.ftr {
+        margin-top: 0em;
+    }
+
+    .needs-validation {
+        margin-bottom: 100px;
+    }
+
+    .img-thumbnail {
+        min-width: 100%;
+    }
+
+    .container {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+}
