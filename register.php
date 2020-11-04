@@ -126,7 +126,8 @@ if (isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['e
             <div class="form-group">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck"> Agree to <a href="#" id="terms">terms and conditions</a> </label>
+                    <!--The link displays a modal with the text for the terms and conditions-->
+                    <label class="form-check-label" for="invalidCheck"> Agree to <a href="#" data-toggle="modal" data-target="#terms">terms and conditions</a> </label>
                     <div class="invalid-feedback"> You must agree before submitting. </div>
                 </div>
             </div>
@@ -134,6 +135,29 @@ if (isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['e
 			</form>
 		</fieldset>
 	</main>
+
+
+<!-- Modal. You can find all the documentation about modals at https://getbootstrap.com/docs/4.5/components/modal/-->
+<div class="modal fade" id="terms" tabindex="-1" aria-labelledby="termsLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Terms and conditions</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>By registering in this website you agree that we will do whatever we want with your data. We will sell it to the highest bidder if we want and you cannot, under any circumstance, complain about it.</p>
+          <p>If you choose to complain, you will have to pay for any and all costs associated with the complaint.</p>
+          <p>Normally you would have normal <span class="error"><strong>terms and conditions</strong></span> in this section, but since this is just a demo, you can have whatever you want.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 	<script>
 		// Example starter JavaScript for disabling form submissions if there are invalid fields
 		(function () {
